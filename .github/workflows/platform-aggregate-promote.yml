@@ -78,6 +78,8 @@ jobs:
 
       - name: "[Setup] JFrog CLI"
         uses: jfrog/setup-jfrog-cli@v4
+        with:
+          version: 2.88.0
         id: jfrog-cli-auth
         with:
           oidc-provider-name: bookverse-platform-github
@@ -169,6 +171,8 @@ jobs:
 
       - name: "[Setup] JFrog CLI"
         uses: jfrog/setup-jfrog-cli@v4
+        with:
+          version: 2.88.0
         id: jfrog-cli-auth
         with:
           oidc-provider-name: bookverse-platform-github
